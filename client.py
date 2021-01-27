@@ -60,5 +60,5 @@ for count in range(1, image_count+1):
         recive_bytes += len(image_data)
     file.close()
     print("图片 "+file_name+" 收取成功！")
-    cliSock.send("F".encode('utf-8'))
+    cliSock.send("Y".encode('utf-8'))
 cliSock.close()
