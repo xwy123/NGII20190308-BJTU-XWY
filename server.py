@@ -66,6 +66,6 @@ while True:
 
             print("传输图片 " + name + " 成功！")
             statue = conSock.recv(BUFSIZ)
-            if statue.decode('utf-8') == "F":
+            if statue.decode('utf-8') != "Y":
                 i = i-1
     conSock.close()
